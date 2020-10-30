@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,8 +46,11 @@ table {
 	border-spacing: 0;
 }
 
+/* General Styles */
+
 * {
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 html, body {
@@ -71,11 +73,48 @@ p {
     margin: 0 auto;
 }
 
+/* Header Section Styles */
+
+header nav{
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items:baseline;
+    text-align: center;
+}
+
+.logo{
+    width: 20%;
+}
+
+.links{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a{
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+.hero-image{
+    margin: 2% 0;
+    overflow: hidden;
+}
+
+/* Top-Content Section Styles */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-about {
     border-bottom: 1px dashed black;
 }
 
@@ -85,12 +124,29 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-about .text-container {
+    width: 100%;
+    padding: 0 4%;
+    padding-bottom: 20px;  
+}
+
+/* Middle-Content Section Styles */
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+.middle-about {
+    margin-bottom: 20px;
+}
+
 .middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-about h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -99,6 +155,13 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.middle-about .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: 1px dashed black;
 }
 
 .middle-content .boxes .box {
@@ -111,6 +174,74 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.contain{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.contain div{
+    width: 48%;
+    margin: 4% 0;
+}
+
+.gallery img, p, button{
+    margin: 2% 0;
+}
+
+button{
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 2% 5%;
+    margin-bottom: 2%;
+}
+
+#box1{
+    background: teal; 
+}
+
+#box2{
+    background: gold; 
+}
+
+#box3{
+    background: cadetblue; 
+}
+
+#box4{
+    background: coral; 
+}
+
+#box5{
+    background: crimson; 
+}
+
+#box6{
+    background: forestgreen; 
+}
+
+#box7{
+    background: darkorchid; 
+}
+
+#box8{
+    background: hotpink; 
+}
+
+#box9{
+    background: indigo; 
+}
+
+#box10{
+    background: dodgerblue; 
+}
+
+/* Bottom-Content Section Styles */
 
 .bottom-content {
     display: flex;
@@ -125,6 +256,13 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+.bottom-about {
+    width: 100%;
+    padding: 0 3%; 
+}
+
+/* Footer Section Styles */
 
 footer {
     width: 100%;
@@ -143,4 +281,10 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.bottom-about .text-container {
+    width: 99%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
