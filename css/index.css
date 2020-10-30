@@ -50,7 +50,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html, body {
@@ -125,8 +125,8 @@ header nav{
 }
 
 .top-about .text-container {
-    width: 99%;
-    padding: 0 1%;
+    width: 100%;
+    padding: 0 4%;
     padding-bottom: 20px;  
 }
 
@@ -255,6 +255,11 @@ button{
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-about {
+    width: 100%;
+    padding: 0 3%; 
 }
 
 /* Footer Section Styles */
